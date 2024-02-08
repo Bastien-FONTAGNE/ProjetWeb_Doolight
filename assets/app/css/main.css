@@ -1055,8 +1055,7 @@ input[type=color] {
   top: 0;
   left: 0;
   z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dceaff), to(#f5f9ff));
-  background: linear-gradient(#dceaff 0%, #f5f9ff 100%);
+  background-color: #f6f6f6;
 }
 .breadcrumb__menu ul {
   display: -webkit-inline-box;

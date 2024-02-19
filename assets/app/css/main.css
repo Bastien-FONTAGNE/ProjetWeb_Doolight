@@ -1042,9 +1042,9 @@ input[type=color] {
 /*  BREAADCRUMB CSS START
 /*----------------------------------------*/
 .breadcrumb__area {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  position: relative;
+  padding-top: 1000px;
+  padding-bottom: 1000px;
+  position:relative;
   z-index: 1;
 }
 .breadcrumb__area::before {
@@ -5774,4 +5774,47 @@ input.e-check-input:checked::after {
 }
 .footer__style-3 .footer__link ul li a:hover {
   color: var(--clr-theme-5);
+}
+
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 250px;
+  min-height: 150px;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+#content {
+  position: relative;
+  z-index: 1000;
+  padding: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.breadcrumb__title {
+  position: relative;
+}
+
+.breadcrumb__video {
+  position: absolute;
+  top: -900px;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 100%; /* Ajuste la largeur de la vidéo */
+  z-index: -1; /* Assure que la vidéo est en dessous du titre */
+}
+
+.breadcrumb__title h2 {
+  margin-bottom: 0; /* Supprime la marge en bas du titre */
+  position: relative;
+  top: -50px; /* Ajuste la position verticale du texte vers le haut */
+}
+
+.titre {
+  text-align: center;
 }
